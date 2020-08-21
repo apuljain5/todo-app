@@ -10,8 +10,7 @@
             {{ todo.date | date}}
         </span>
         <span>
-            <p (click)="deleteTodo(todo)">Trash</p>
-            <!-- <fa-icon [icon]="faTrashAlt"></fa-icon> -->
+            <fa-icon (click)="deleteTodo(todo)" [icon]="faTrashAlt"></fa-icon>
         </span>
     </li>
 </ul>
